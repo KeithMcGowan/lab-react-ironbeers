@@ -1,0 +1,17 @@
+.links {
+    margin-bottom: 50px;
+}
+
+.links a {
+    text-decoration: none;
+    color: black;
+}
+
+.links h2 {
+    line-height: 0.25rem;
+}
+
+.links p {
+    width: 500px;
+    margin: 0 auto;
+}
