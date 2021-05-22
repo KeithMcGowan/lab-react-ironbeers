@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './SingleBeer.css';
+import Header from '../header/Header';
 import axios from 'axios';
 
 class SingleBeer extends Component {
@@ -27,29 +28,33 @@ class SingleBeer extends Component {
     // if (!theBeer) return null;
     const theBeer = this.state.theBeer;
     return (
-      <div className="single-beer" key={theBeer._id}>
-        <img src={theBeer.image_url} alt={theBeer.name} />
-        <div>
-          <div className="top">
-            <h2>{theBeer.name}</h2>
-            <h2>
-              <span>{theBeer.attenuation_level}</span>
-            </h2>
-          </div>
-          <div className="bottom">
-            <h4>
-              <span>{theBeer.tagline}</span>
-            </h4>
-            <h4>{theBeer.first_brewed}</h4>
-          </div>
-          <div className="text">
-            <p><strong>{theBeer.description}</strong></p>
-            <h5>{theBeer.contributed_by}</h5>
+      <>
+        <Header />
+        <div className="single-beer" key={theBeer._id}>
+          <img src={theBeer.image_url} alt={theBeer.name} />
+          <div>
+            <div className="top">
+              <h2>{theBeer.name}</h2>
+              <h2>
+                <span>{theBeer.attenuation_level}</span>
+              </h2>
+            </div>
+            <div className="bottom">
+              <h4>
+                <span>{theBeer.tagline}</span>
+              </h4>
+              <h4>{theBeer.first_brewed}</h4>
+            </div>
+            <div className="text">
+              <p>
+                <strong>{theBeer.description}</strong>
+              </p>
+              <h5>{theBeer.contributed_by}</h5>
+            </div>
           </div>
         </div>
-      </div>
+      </>
     );
-    return null;
   }
 }
 

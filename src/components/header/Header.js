@@ -4,7 +4,6 @@ import 'font-awesome/css/font-awesome.min.css';
 import { Link } from 'react-router-dom';
 
 class Header extends Component {
-  
   render() {
     return (
       <Link to="/">

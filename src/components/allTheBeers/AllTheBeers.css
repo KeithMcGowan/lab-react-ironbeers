@@ -1,3 +1,9 @@
+input {
+    max-width: 95%;
+    margin-top: 2vh;
+    padding-left: 1vw;
+}
+
 .all-the-beers a {
     display: flex;
     justify-content: center;
